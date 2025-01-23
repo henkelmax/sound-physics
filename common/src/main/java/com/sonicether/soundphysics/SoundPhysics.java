@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 import javax.annotation.Nullable;
 
 import com.sonicether.soundphysics.utils.RaycastUtils;
+import com.sonicether.soundphysics.utils.SoundsPerTickCounter;
 import org.joml.Vector3f;
 import org.lwjgl.openal.AL10;
 import org.lwjgl.openal.AL11;
@@ -224,7 +225,7 @@ public class SoundPhysics {
             }
         }
 
-        if (!SoundPhysicsMod.ALLOWED_SOUND_CONFIG.isAllowed(sound)) {
+        if (SoundsPerTickCounter.getCountAndIncrement(sound) >= SoundPhysicsMod.MAX_SOUNDS_PER_TICK_CONFIG.getMaxCount(sound)) {
             setDefaultEnvironment(sourceID, auxOnly);
             return null;
         }

@@ -235,7 +235,7 @@ public class ClothConfigIntegration {
             SoundPhysicsMod.CONFIG.enabled.save();
             SoundPhysicsMod.REFLECTIVITY_CONFIG.save();
             SoundPhysicsMod.OCCLUSION_CONFIG.save();
-            SoundPhysicsMod.ALLOWED_SOUND_CONFIG.save();
+            SoundPhysicsMod.MAX_SOUNDS_PER_TICK_CONFIG.save();
             SoundPhysicsMod.CONFIG.reloadClient();
         });
 

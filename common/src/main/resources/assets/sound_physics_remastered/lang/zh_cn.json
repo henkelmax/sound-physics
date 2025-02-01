@@ -15,6 +15,8 @@
   "cloth_config.sound_physics_remastered.simple_voice_chat_hear_self.description": "启用/禁用简单语音聊天时听到自己的回声。",
   "cloth_config.sound_physics_remastered.attenuation_factor": "衰减系数",
   "cloth_config.sound_physics_remastered.attenuation_factor.description": "声音的衰减程度。数值越小，远处的音源的声音听起来就越大。此设置只在客户端和服务器同时安装本模组时生效。1.0是物理中正确的值。",
+  "cloth_config.sound_physics_remastered.reverb_attenuation_distance": "混响衰减距离",
+  "cloth_config.sound_physics_remastered.reverb_attenuation_distance.description": "混响衰减时的辐射距离。\n0.0 禁用混响衰减。",
   "cloth_config.sound_physics_remastered.reverb_gain": "混响增益",
   "cloth_config.sound_physics_remastered.reverb_gain.description": "模拟混响的音量。",
   "cloth_config.sound_physics_remastered.reverb_brightness": "混响音高",
